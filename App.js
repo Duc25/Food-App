@@ -19,21 +19,20 @@ import {
   View,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import {createStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
-
-
 
 const App = ({ navigation }) => {
 
   return (
-    <NavigationContainer>
+    
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Login} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+        <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
 
-    </NavigationContainer>
+    
 
   );
 };
